@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.RestaurantInfoController" spacing="15" style="-fx-padding: 20;">
+    
+    <Label text="About Our Restaurant" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+    <Label text="Restaurant Name:" style="-fx-font-weight: bold;"/>
+    <Label fx:id="nameLabel" text=""/>
+
+    <Label text="Address:" style="-fx-font-weight: bold;"/>
+    <Label fx:id="addressLabel" text=""/>
+
+    <Label text="Opening Hours:" style="-fx-font-weight: bold;"/>
+    <Label fx:id="hoursLabel" text=""/>
+
+    <Label text="Contact:" style="-fx-font-weight: bold;"/>
+    <Label fx:id="contactLabel" text=""/>
+
+    <Label text="About Us:" style="-fx-font-weight: bold;"/>
+    <TextArea fx:id="aboutTextArea" editable="false" wrapText="true" prefHeight="120"/>
+</VBox>

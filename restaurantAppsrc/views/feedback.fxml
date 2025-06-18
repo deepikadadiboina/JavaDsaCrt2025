@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<VBox spacing="15" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.FeedbackController" style="-fx-padding: 20;">
+    
+    <Label text="Feedback Form" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <Label text="Your Name:"/>
+    <TextField fx:id="nameField" promptText="Enter your name"/>
+
+    <Label text="Rating:"/>
+    <ChoiceBox fx:id="ratingBox">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Excellent"/>
+                <String fx:value="Good"/>
+                <String fx:value="Average"/>
+                <String fx:value="Poor"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+
+    <Label text="Comments:"/>
+    <TextArea fx:id="commentArea" promptText="Write your feedback here..." prefHeight="100"/>
+
+    <Button text="Submit Feedback" onAction="#handleSubmitFeedback" style="-fx-background-color: #3498db; -fx-text-fill: white;"/>
+
+    <Label fx:id="statusLabel" textFill="green"/>
+</VBox>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.StaffController" style="-fx-padding: 20;">
+    
+    <Label text="Staff Information" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <TableView fx:id="staffTable" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="colName" text="Name" prefWidth="150"/>
+            <TableColumn fx:id="colRole" text="Role" prefWidth="100"/>
+            <TableColumn fx:id="colShift" text="Shift" prefWidth="100"/>
+            <TableColumn fx:id="colSalary" text="Salary" prefWidth="100"/>
+        </columns>
+    </TableView>
+
+    <Button text="Refresh" onAction="#loadStaffData" style="-fx-background-color: #7f8c8d; -fx-text-fill: white;"/>
+</VBox>
